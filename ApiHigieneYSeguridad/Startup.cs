@@ -27,6 +27,11 @@ using Serilog;
 using Services;
 using Services.Contracts;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+using HealthChecks.UI.Client;
 
 namespace ApiHigieneYSeguridad
 {
@@ -48,7 +53,7 @@ namespace ApiHigieneYSeguridad
 
             services.AddAutoMapper(typeof(Startup));
             services.AddControllers();
-
+            #region Injeccion De Dependencia
             //DI Repositorios
             //services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IGenericRepository<Empresa>, EmpresaRepository>();
@@ -94,6 +99,15 @@ namespace ApiHigieneYSeguridad
             services.AddScoped<IHashingService, HashingService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IAuthenticateService, AuthentificateService>();
+            #endregion
+
+            services.AddHealthChecks()
+                .AddSqlServer(Configuration.GetConnectionString(ConfiguracionConstants.NOMBRE_BASE_DATOS));
+
+            services.AddHealthChecksUI(s =>
+            {
+                s.AddHealthCheckEndpoint("Controls", "https://localhost:44318/health");
+            }).AddInMemoryStorage();
 
             services.AddDbContext<AplicationDbContext>(
 
@@ -101,6 +115,7 @@ namespace ApiHigieneYSeguridad
                 x => x.UseNetTopologySuite())
             );
 
+            #region Swagger
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
@@ -139,7 +154,9 @@ namespace ApiHigieneYSeguridad
                 c.IncludeXmlComments(filePath);
 
             });
+            #endregion
 
+            #region Autentificacion JWT
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -161,6 +178,8 @@ namespace ApiHigieneYSeguridad
                     IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(Encoding.UTF8.GetBytes("43729FD696AABBCC1A541BB1AB399FAD"))
                 };
             });
+            #endregion
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -185,6 +204,21 @@ namespace ApiHigieneYSeguridad
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHealthChecks("/health", new HealthCheckOptions()
+                {
+                    ResultStatusCodes =
+                    {
+                        [HealthStatus.Healthy] = StatusCodes.Status200OK,
+                        [HealthStatus.Degraded] = StatusCodes.Status500InternalServerError,
+                        [HealthStatus.Unhealthy] = StatusCodes.Status503ServiceUnavailable
+                    },
+                    ResponseWriter = WriteHealthCheckResponse
+                });
+                endpoints.MapHealthChecks("/healthui", new HealthCheckOptions()
+                {
+                    Predicate = _ => true,
+                    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+                });
             });
 
             app.UseSwagger();
@@ -204,7 +238,27 @@ namespace ApiHigieneYSeguridad
             {
                 app.UseHsts();
             }
-           
+
+            app.UseHealthChecksUI();
+        }
+
+        private Task WriteHealthCheckResponse(HttpContext httpContext, HealthReport result)
+        {
+            httpContext.Response.ContentType = "application/json";
+
+            var json = new JObject(new JProperty("OverallStatus", result.Status.ToString()),
+                    new JProperty("TotalChecksDuration", result.TotalDuration.TotalSeconds.ToString("0:0.00")),
+                    new JProperty("DependencyHealthChecks", new JObject(result.Entries.Select(dicItem =>
+                        new JProperty(dicItem.Key, new JObject(
+                                new JProperty("Status", dicItem.Value.Status.ToString()),
+                                new JProperty("Duration", dicItem.Value.Duration.TotalSeconds.ToString("0:0.00")),
+                                new JProperty("Exception", dicItem.Value.Exception?.Message),
+                                new JProperty("Data", new JObject(dicItem.Value.Data.Select(dicData =>
+                                    new JProperty(dicData.Key, dicData.Value))))
+                            ))
+                    ))));
+
+            return httpContext.Response.WriteAsync(json.ToString(Formatting.Indented));
         }
     }
 }
