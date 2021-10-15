@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Exceptions.BaseDeDatosExcepcion">
+    <Position X="4" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>BaseDeDatosExcepcion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Exception">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

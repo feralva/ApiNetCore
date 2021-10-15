@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Services.DireccionService">
+    <Position X="6.75" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DireccionService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services.EmpleadoService">
+    <Position X="12" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEACAAAAAAAAAAQAAAAAAAFAAAQAAAAACAAAAAAAA=</HashCode>
+      <FileName>EmpleadoService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services.EmpresaService">
+    <Position X="9.75" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgABAAAAAAAgAAAAAABAAAQAAAAAAAAIAgAAA=</HashCode>
+      <FileName>EmpresaService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services.EquipoMedicionService">
+    <Position X="6" Y="4.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>EquipoMedicionService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services.EstablecimientoService">
+    <Position X="11.75" Y="8" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAgAAAAABACCCAAAAAAAAAAAAIAAAAAAAABAAAA=</HashCode>
+      <FileName>EstablecimientoService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services.GenericService&lt;T&gt;">
+    <Position X="9.75" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAKAACCCAAAAAAAAAABQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GenericService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Services.PlanService">
+    <Position X="6.25" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAgAAAAAAAAEAEgAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>PlanService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services.TipoVisitaService">
+    <Position X="6.75" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TipoVisitaService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services.VisitaService">
+    <Position X="12" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAACAAAAAAAAAAAAEAABAAgAAAAgQAAAAEA=</HashCode>
+      <FileName>VisitaService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services.ClienteService">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClienteService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services.EstadoPlanService">
+    <Position X="15.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EstadoPlanService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services.EstadoVisitaService">
+    <Position X="14.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EstadoVisitaService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services.IrregularidadService">
+    <Position X="14.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAQAAAACAAAAQAA=</HashCode>
+      <FileName>IrregularidadService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services.LicenciaService">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAABAAAAAA=</HashCode>
+      <FileName>LicenciaService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services.PartidoService">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PartidoService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Services.Contracts.IGenericService&lt;T&gt;">
+    <Position X="9.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAACACAAAAAAAAAABQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IGenericService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

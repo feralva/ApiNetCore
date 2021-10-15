@@ -1,0 +1,421 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiHigieneYSeguridad</name>
+    </assembly>
+    <members>
+        <member name="M:ApiHigieneYSeguridad.Controllers.AuthenticateController.Login(Model.LoginModel)">
+             <summary>
+             Get JWT token
+             </summary>
+             <remarks>
+             Requiere usuario y password de red.
+            
+             </remarks>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.AuthenticateController.ObtenerRolesPosibles">
+            <summary>
+            Obtener Roles Disponibles
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.AuthenticateController.ObtenerRolesUsuario(System.String)">
+            <summary>
+            Obtener Roles De Usuario
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.AuthenticateController.ForgotPassword(System.String)">
+            <summary>
+            Envio Correo con el token para que el usuario reestablezca su contraseña
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.AuthenticateController.ReestablecerPassUsuario(Model.RequestHttp.RequestReestablecerPassUser)">
+            <summary>
+            Envio Correo con el token para que el usuario reestablezca su contraseña
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.AuthenticateController.ObtenerInformacionUsuario(System.String)">
+            <summary>
+            Obtener Información Usuario
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.AuthenticateController.ObtenerPatentesUsuario(System.String)">
+            <summary>
+            Obtener Patentes de Usuario
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.ClienteController.AltaCliente(Model.RequestHttp.RequestAlta{Model.ClienteDTO})">
+            <summary>
+            Alta de Cliente
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.ClienteController.ModificarCliente(Model.RequestHttp.RequestModify{Model.ClienteDTO})">
+            <summary>
+            Modificar Cliente
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.ClienteController.ObtenerVisitasPorEstadoEmpresa(System.Int32)">
+            <summary>
+            Obtener Visitas Por estado de cliente
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.ClienteController.ObtenerEstablecimientos(System.Int32,System.Nullable{System.Boolean})">
+            <summary>
+            Obtener Todos los Establecimientos Empresa
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.ClienteController.ObtenerPlanes(System.Int32,System.Nullable{System.Boolean},System.Int32)">
+            <summary>
+            Obtener Todos los Planes accion Cliente
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.ClienteController.ObtenerClientes">
+            <summary>
+            Obtener Todos los Clientes
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.ClienteController.ObtenerClienteResumen(System.Int32)">
+            <summary>
+            Obtener Cliente Resumen
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.ClienteController.ObtenerCliente(System.Int32)">
+            <summary>
+            Obtener Cliente
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.ClienteController.ObtenerPlanesEstablecimientoCliente(System.Int32,System.Int32)">
+            <summary>
+            Obtener Todos los Planes de Establecimiento de Cliente
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.DireccionController.ObtenerPartidosDeProvincia(System.Int32)">
+            <summary>
+            Obtener Partidos disponibles para Provincia
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.DireccionController.ObtenerProvinciasDisponibles">
+            <summary>
+            Obtener Provincias Disponibles
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpleadoController.AltaEmpleado(Model.RequestHttp.RequestAlta{Model.EmpleadoDTO})">
+            <summary>
+            Alta Empleado
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpleadoController.ObtenerEmpleadoPorId(System.Int32)">
+            <summary>
+            Busqueda Empleado
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpleadoController.ObtenerVisitasPorEmpleado(System.Int32)">
+            <summary>
+            Obtener Visitas Pendientes Asignadas a Empleado
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpleadoController.ActualizarEmpleado(Model.RequestHttp.RequestModify{Model.EmpleadoDTO})">
+            <summary>
+            Actualizar Empleado
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.AltaEmpresa(Model.RequestHttp.RequestAlta{Model.EmpresaDTO})">
+            <summary>
+            Alta de Empresa
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.ModificarEmpresa(Model.RequestHttp.RequestModify{Model.EmpresaDTO})">
+            <summary>
+            Modificar Empresa
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.ModificarCantidadEquiposMedicionEmpresa(Model.RequestHttp.RequestModify{Model.EquipoMedicionTotalizadoDTO},System.Int32)">
+            <summary>
+            Modificar Cantidad Equipos Medición Empresa
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.ObtenerEmpleados(System.Int32,System.Boolean)">
+            <summary>
+            Obtener Todos los Empleados Empresa
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.ObtenerVisitasEmpresa(System.Int32,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Obtener Todas las visitas de empresa, segun estado.
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.ObtenerVisitasPorEstadoEmpresa(System.Int32)">
+            <summary>
+            Obtener Visitas Por estado de cliente
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.ObtenerPlanes(System.Int32,System.Nullable{System.Boolean},System.Int32)">
+            <summary>
+            Obtener Todos los Planes Empresa
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.ObtenerEmpresas(System.Boolean)">
+            <summary>
+            Obtener Empresas
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.ObtenerEmpresaPorId(System.Int32)">
+            <summary>
+            Obtener Empresa por Id
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.ObtenerClientesEmpresa(System.Int32)">
+            <summary>
+            Obtener Clientes Empresa
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.ObtenerClientesEmpresaResumen(System.Int32)">
+            <summary>
+            Obtener Clientes Empresa Resumen
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.ObtenerEquiposMedicionEmpresa(System.Int32)">
+            <summary>
+            Obtener Equipos Medicion Empresa
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.ObtenerEquiposMedicionEmpresaTotalizado(System.Int32)">
+            <summary>
+            Obtener Equipos Medicion Empresa Totalizado
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.ObtenerPagos(System.Int32)">
+            <summary>
+            Obtener Pagos empresa
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EmpresaController.ObtenerLicencia(System.Int32)">
+            <summary>
+            Obtener Licencia Empresa
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EquipoMedicionController.AltaEquipoMedicion(Model.RequestHttp.RequestAlta{Model.EquipoMedicionDTO})">
+            <summary>
+            Alta Equipo Medicion
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EquipoMedicionController.ObtenerEquipo(System.Int32)">
+            <summary>
+            Obtener Equipo Medicion Por Id
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EquipoMedicionController.ObtenerTipoEquipo(System.String,System.Int32)">
+            <summary>
+            Obtener Tipo Equipo Medición
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EquipoMedicionController.ObtenerEquiposMedicion(System.Int32)">
+            <summary>
+            Obtener Equipos
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EquipoMedicionController.ObtenerTiposEquipoMedicion">
+            <summary>
+            Obtener Tipos Equipos
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EstablecimientoController.AltaEstablecimiento(Model.RequestHttp.RequestAlta{Model.EstablecimientoDTO})">
+            <summary>
+            Alta Establecimiento
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EstablecimientoController.ObtenerEstablecimiento(System.Int32)">
+            <summary>
+            Obtener Establecimiento
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EstablecimientoController.ObtenerUbicacionesEstablecimiento(System.Int32)">
+            <summary>
+            Obtener Ubicaciones
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EstablecimientoController.ObtenerClienteEnBaseaEstablecimiento(System.Int32)">
+            <summary>
+            Obtener Cliente en Base a Establecimiento
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EstablecimientoController.ActualizarEstablecimiento(Model.RequestHttp.RequestModify{Model.EstablecimientoDTO})">
+            <summary>
+            Actualizar Establecimiento
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.EstablecimientoController.ObtenerCaminoOptimoEstablecimiento(System.Int32)">
+            <summary>
+            Obtener Mejor Ruta Establecimiento
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.IrregularidadController.ObtenerTiposIrregularidades">
+            <summary>
+            Obtener Tipos Irregularidad
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.IrregularidadController.ObtenerIrregularidades(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Obtener Irregularidades
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.IrregularidadController.ObtenerIrregularidad(System.Int32)">
+            <summary>
+            Obtener Irregularidad
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.IrregularidadController.AltaIrregularidad(Model.RequestHttp.RequestAlta{Model.IrregularidadDTO})">
+            <summary>
+            Alta Irregularidad
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.IrregularidadController.CompletarIrregularidad(Model.RequestHttp.RequestModify{Model.IrregularidadDTO})">
+            <summary>
+            Completado Irregularidad
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.LicenciaController.ObtenerLicencias(System.Int32)">
+            <summary>
+            Obtener Licencias
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.LicenciaController.ObtenerTiposLicencia(System.Boolean)">
+            <summary>
+            Obtener Tipos Licencia
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.LicenciaController.Alta(Model.RequestHttp.RequestAlta{Model.LicenciaDTO})">
+            <summary>
+            Alta de Licencia
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.LogPruebaController.Log">
+             <summary>
+             Prueba Log
+             </summary>
+             <remarks>
+             No Requiere Parametros
+            
+             </remarks>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.PagoController.RegistrarPago(Model.RequestHttp.RequestAlta{Model.PagoDTO})">
+            <summary>
+            Registro Pago
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.PagoController.ObtenerPagos(System.Int32,System.Int32)">
+            <summary>
+            Obtener Pagos
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.PlanController.AltaPlan(Model.RequestHttp.RequestAlta{Model.PlanDTO})">
+            <summary>
+            Alta Plan Accion
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.PlanController.EditarPlan(Model.RequestHttp.RequestModify{Model.PlanModels.PlanCambiarEstadoDTO})">
+            <summary>
+            Editar Plan Accion
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.PlanController.ObtenerPlanPorId(System.Int32,System.Boolean)">
+            <summary>
+            Busqueda Plan Especifico
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.PlanController.DeterminarSiVisitasPlanEstanCerradas(System.Int32)">
+            <summary>
+            Determinar si las visitas del plan estan cerradas
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.PlanController.ObtenerTiposPlanes">
+            <summary>
+            Obtener Tipos Planes
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.PlanController.ObtenerEstadosPosibles">
+            <summary>
+            Obtener Estados Plan
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.TipoLicenciaController.AltaLicencia(Model.RequestHttp.RequestAlta{Model.TipoLicencia.TipoLicenciaAltaDTO})">
+            <summary>
+            Alta Tipo Licencia
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.TipoLicenciaController.ActualizarPrecioTipoLicencia(Model.RequestHttp.RequestModify{Model.TipoLicencia.TipoLicenciaAltaDTO})">
+            <summary>
+            Actualizar Precio Tipo Licencia
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.TipoLicenciaController.ObtenerTipoLicenciaPorId(System.Int32)">
+            <summary>
+            Busqueda Tipo Licencia
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.TipoLicenciaController.ModificarTipoLicencia(Model.RequestHttp.RequestModify{Model.TipoLicenciaDTO})">
+            <summary>
+            Modificar Tipo Licencia
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.UbicacionController.ObtenerUbicacionesEstablecimiento(System.Int32)">
+            <summary>
+            Obtener Irregularidades Ubicacion
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.UbicacionController.ObtenerUbicacionPorId(System.Int32)">
+            <summary>
+            Obtener Ubicacion por Id
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.UbicacionController.BorrarUbicacionPorId(System.Int32)">
+            <summary>
+            Borrar Ubicacion por Id
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.VisitaController.AltaVisita(Model.RequestHttp.RequestAlta{Model.VisitaDTO})">
+            <summary>
+            Alta de Visita
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.VisitaController.ObtenerVisitasEmpleado(System.Int32,System.Boolean,System.Int32)">
+            <summary>
+            Obtener Visitas Empleado
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.VisitaController.ObtenerTiposVisita">
+            <summary>
+            Obtener Tipos Visita
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.VisitaController.ObtenerEstadosVisita">
+            <summary>
+            Obtener Estados Posibles Visita
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.VisitaController.ObtenerVisitaPorId(System.Int32)">
+            <summary>
+            Obtener Visita por Id
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.VisitaController.ReasignarVisita(Model.RequestHttp.RequestModify{Model.VisitaDTO})">
+            <summary>
+            Actualizar Auditor Visita
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.VisitaController.CambiarFechaVisita(Model.RequestHttp.RequestModify{Model.VisitaDTO})">
+            <summary>
+            Actualizar Fecha Visita
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.VisitaController.CompletarVisita(Model.RequestHttp.RequestModify{Model.Visita.VisitaCambiarEstadoDTO})">
+            <summary>
+            Cambiar estado Visita a Completo
+            </summary>
+        </member>
+        <member name="M:ApiHigieneYSeguridad.Controllers.VisitaController.CancelarVisita(Model.RequestHttp.RequestModify{Model.Visita.VisitaCambiarEstadoDTO})">
+            <summary>
+            Cambiar estado Visita a Cancelado
+            </summary>
+        </member>
+    </members>
+</doc>

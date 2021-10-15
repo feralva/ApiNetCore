@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Model.ClienteDTO" BaseTypeListCollapsed="true">
+    <Position X="3" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAiAACAAAAAAAIAACAAgAAAAAAAAAAiAAIAAAAAAAE=</HashCode>
+      <FileName>ClienteDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Model.DireccionDTO" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAgEAACAAAAAAQAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>DireccionDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Model.EmpleadoDTO" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAACgAAAAoAAAAAiABAEAAAAAAA=</HashCode>
+      <FileName>EmpleadoDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Model.EmpresaDTO" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAAAAIAACAAgAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>EmpresaDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Model.EquipoMedicionDTO" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAIAAAAAAiAAAAAAAAAAA=</HashCode>
+      <FileName>EquipoMedicionDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Model.EquipoMedicionTotalizadoDTO" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>EquipoMedicionTotalizadoDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Model.EstablecimientoDTO" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACgAAAAEAAAAAAADCAgAAAAAAAAAAgAAAAAAAAEAA=</HashCode>
+      <FileName>EstablecimientoDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Model.EstadoPlanDTO" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EstadoPlanDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Model.FamiliaDTO">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FamiliaDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.IrregularidadDTO">
+    <Position X="11.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBACAABEAACAAAAAABDAAIADEAAAACACCAAAAAAAAAw=</HashCode>
+      <FileName>IrregularidadDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Model.LoginModel" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>LoginModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Model.PlanClienteDTO" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAACAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAg=</HashCode>
+      <FileName>PlanClienteDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Model.PlanDTO" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIMIAAAAAAAABBAAAAAAAAAAAAiAAAAAAAAAAA=</HashCode>
+      <FileName>PlanDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.171" />
+  </Class>
+  <Class Name="Model.PlanesPorClienteDTO" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>PlanesPorClienteDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Model.PlanEstablecimientoDTO" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>PlanEstablecimientoDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Model.ResponsableEmpresaDTO" BaseTypeListCollapsed="true">
+    <Position X="5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAgAAAAAAAAAAAABAAAgAAAAA=</HashCode>
+      <FileName>ResponsableEmpresaDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Model.TipoPlanDTO" BaseTypeListCollapsed="true">
+    <Position X="3" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TipoPlanDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Model.TotalizadosPlanesDTO">
+    <Position X="5" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>TotalizadosPlanesDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.UbicacionDTO">
+    <Position X="7.5" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAQAEAAAAAAAAAAgAAAAAAAAQAAAAAAAAAAEAA=</HashCode>
+      <FileName>UbicacionDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Model.VisitaDTO" BaseTypeListCollapsed="true">
+    <Position X="3" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAUEAAIAAEAAABAAABAAAABAAAgAAAAACAAAAA=</HashCode>
+      <FileName>VisitaDTO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.181" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

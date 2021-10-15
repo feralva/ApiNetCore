@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="EmailHtmlTemplates\CambioContraseniaExitoso.html" />
+    <None Remove="EmailHtmlTemplates\forgotPassword.html" />
+    <None Remove="EmailHtmlTemplates\Welcome.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="EmailHtmlTemplates\CambioContraseniaExitoso.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="itext7" Version="7.1.12" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.7.1" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="5.5.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj" />
+    <ProjectReference Include="..\Encriptacion\Encriptacion.csproj" />
+    <ProjectReference Include="..\Exceptions\Exceptions.csproj" />
+    <ProjectReference Include="..\Model\Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="EmailHtmlTemplates\forgotPassword.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="EmailHtmlTemplates\Welcome.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="EmailHtmlTemplates\WelcomeEmpresa.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

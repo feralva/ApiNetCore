@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Data.Repositories.ClienteRepository">
+    <Position X="10.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQBAAgABAAAEAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\ClienteRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.DireccionRepository">
+    <Position X="15.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAABAAAAAAAAAAEEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\DireccionRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.EmpleadoRepository">
+    <Position X="20.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAQAAAAACAAAAAAAA=</HashCode>
+      <FileName>Repositories\EmpleadoRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.EmpresaRepository">
+    <Position X="21" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQBAAgAAAAAEAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\EmpresaRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.EquipoMedicionRepository">
+    <Position X="21" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\EquipoMedicionRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.EstablecimientoRepository">
+    <Position X="12.25" Y="3.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAgAAAAAAAQAAAAAAAQIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\EstablecimientoRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.GenericRepository&lt;T&gt;">
+    <Position X="16" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQCAEAAQAAAAABiAAAAAAAAAAEAQQAAAAAAAAgAAAA=</HashCode>
+      <FileName>Repositories\GenericRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Data.Repositories.IrregularidadRepository">
+    <Position X="16" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\IrregularidadRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.PlanRepository">
+    <Position X="21.25" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCEAAQAAAAAAAACAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\PlanRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.ResponsableEmpresaRepository">
+    <Position X="13" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\ResponsableEmpresaRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.TipoEquipoMedicionRepository">
+    <Position X="13.25" Y="9.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\TipoEquipoMedicionRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.TipoIrregularidadRepository">
+    <Position X="18.5" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\TipoIrregularidadRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.TipoPlanRepository">
+    <Position X="10" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\TipoPlanRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.TipoVisitaRepository">
+    <Position X="18.75" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\TipoVisitaRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.UbicacionRepository">
+    <Position X="13.25" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\UbicacionRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.VisitaRepository">
+    <Position X="10.25" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAACAAAAAAEAABQAAAAAAAQAAAAEA=</HashCode>
+      <FileName>Repositories\VisitaRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.EstadoPlanRepository">
+    <Position X="8.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\EstadoPlanRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.EstadoVisitaRepository">
+    <Position X="8" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\EstadoVisitaRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.LicenciaRepository">
+    <Position X="23.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\LicenciaRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.PagoRepository">
+    <Position X="24" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\PagoRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.PartidoRepository">
+    <Position X="23.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\PartidoRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.PrecioLicenciaRepository">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\PrecioLicenciaRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.TasaConversionTipoLicenciaRepository">
+    <Position X="8" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\TasaConversionTipoLicenciaRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Repositories.TipoLicenciaRepository">
+    <Position X="24.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\TipoLicenciaRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Data.Repositories.Contracts.IGenericRepository&lt;T&gt;">
+    <Position X="18" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAABgAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Contracts\IGenericRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

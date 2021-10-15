@@ -1,0 +1,74 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationInsightsResourceId>/subscriptions/f3a4983e-e9eb-4d56-a962-0ce73151fa23/resourcegroups/ApiRG/providers/microsoft.insights/components/ApiHigieneYSeguridad</ApplicationInsightsResourceId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CodeAnalysisRuleSet>ApiHigieneYSeguridad.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>HigSegApi.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Exceptions\**" />
+    <Content Remove="Exceptions\**" />
+    <EmbeddedResource Remove="Exceptions\**" />
+    <None Remove="Exceptions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.14.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.14.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Moq" Version="4.14.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.1.3" />
+    <PackageReference Include="Serilog.Enrichers.Process" Version="2.0.1" />
+    <PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="5.5.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Connected Services\" />
+    <Folder Include="Constants\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj" />
+    <ProjectReference Include="..\Encriptacion\Encriptacion.csproj" />
+    <ProjectReference Include="..\Exceptions\Exceptions.csproj" />
+    <ProjectReference Include="..\Model\Model.csproj" />
+    <ProjectReference Include="..\Services\Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="HigSegApi.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+
+</Project>
