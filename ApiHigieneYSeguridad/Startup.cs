@@ -91,7 +91,6 @@ namespace ApiHigieneYSeguridad
             services.AddScoped<IGenericService<Empresa>, EmpresaService>();
             services.AddScoped<IGenericService<Cliente>, ClienteService>();
             services.AddScoped<IEmailService, EmailService>();
-
             services.AddScoped<IHashingService, HashingService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IAuthenticateService, AuthentificateService>();
