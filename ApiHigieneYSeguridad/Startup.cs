@@ -106,7 +106,7 @@ namespace ApiHigieneYSeguridad
 
             services.AddHealthChecksUI(s =>
             {
-                s.AddHealthCheckEndpoint("Controls", "https://localhost:44318/health");
+                s.AddHealthCheckEndpoint("endpoint1", "https://localhost:44318/health");
             }).AddInMemoryStorage();
 
             services.AddDbContext<AplicationDbContext>(
@@ -204,21 +204,28 @@ namespace ApiHigieneYSeguridad
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHealthChecksUI();
+
                 endpoints.MapHealthChecks("/health", new HealthCheckOptions()
-                {
-                    ResultStatusCodes =
-                    {
-                        [HealthStatus.Healthy] = StatusCodes.Status200OK,
-                        [HealthStatus.Degraded] = StatusCodes.Status500InternalServerError,
-                        [HealthStatus.Unhealthy] = StatusCodes.Status503ServiceUnavailable
-                    },
-                    ResponseWriter = WriteHealthCheckResponse
-                });
-                endpoints.MapHealthChecks("/healthui", new HealthCheckOptions()
                 {
                     Predicate = _ => true,
                     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
                 });
+                //endpoints.MapHealthChecks("/health", new HealthCheckOptions()
+                //{
+                //    ResultStatusCodes =
+                //    {
+                //        [HealthStatus.Healthy] = StatusCodes.Status200OK,
+                //        [HealthStatus.Degraded] = StatusCodes.Status500InternalServerError,
+                //        [HealthStatus.Unhealthy] = StatusCodes.Status503ServiceUnavailable
+                //    },
+                //    ResponseWriter = WriteHealthCheckResponse
+                //});
+                //endpoints.MapHealthChecks("/healthui", new HealthCheckOptions()
+                //{
+                //    Predicate = _ => true,
+                //    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+                //});
             });
 
             app.UseSwagger();
@@ -239,7 +246,7 @@ namespace ApiHigieneYSeguridad
                 app.UseHsts();
             }
 
-            app.UseHealthChecksUI();
+            //app.UseHealthChecksUI();
         }
 
         private Task WriteHealthCheckResponse(HttpContext httpContext, HealthReport result)
